@@ -1,0 +1,133 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,noedge,left]{profile}
+\name{David}{Milmont}
+%\position{Software Engineer{\enskip\cdotp\enskip}Security Expert}
+\address{Denver, Colorado}
+
+\mobile{(720) 217-7914}
+\email{DavidMilmont@gmail.com}
+\homepage{www.DavidMilmont.com}
+\github{DMilmont}
+\linkedin{DavidMilmont}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world. Now!"}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {Thrive Global}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Senior Analyst, Data Science & Analytics}
+% How the letter is opened
+\letteropening{Dear Hiring Manager,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {David Milmont~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+%\lettersection{About Me}
+It is not very often I come across a company that is built around the betterment of humanity. I like the work that your company is doing in helping people achieve their best in life. I would love to have the opportunity to help your company build out it's analytical capabilities, especially if it means my skills can indirectly help others. 
+
+%\lettersection{Why Google?}
+I have over 6 years of experience working in various data related roles at multiple companies. Approximately one year ago I quit my full time data science job to pursue my masters degree in analytics at Georgia Tech and performed data science freelancing on the side. Now that my studies are ending, I am now looking to get back into the workforce with a data driven company that can utilize my skills and experience. 
+
+%\lettersection{Why Me?}
+In my past experience, I have worked in the entire data pipeline from data collection, cleaning and storage, metric creation, machine learning and statistical modeling. I have worked with large datasets using tech like Spark and SQL and modeled and cleaned the data using tools like Python and R. Because my experience is so diverse, plus my business background, I am able to tell stories with data that have a direct and meaningful impact on the business. Some of my past work also includes optimizing the product operations at Ria Financial where I modeled customer order behavior and built a tool for executives to use to help them see the effects of product pricing on profit and customer retention/acquisition trade-offs. In addition to this I have a lot of experiencing creating data driven dashboards tailored specifically to department needs. I can see a lot of challenges in the position that you describe but this is what interests me the most, I would love to hit the ground running with my analytic skill set and help shape analytics at Thrive Global for the long term. Look forward to having the opportunity to speak with you further on this position! 
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
